@@ -1,0 +1,12 @@
+{
+  "name": "Neeraj",
+  "city": "Mathura",
+  "age": 22,
+  "address": {
+    "location": "Mathura",
+    "country": "IN"
+  },
+  "isMarried": false,
+  "hobbies": ["bike riding", "gaming", "binge watching series", "travelling"],
+  "girlfriend": null
+}

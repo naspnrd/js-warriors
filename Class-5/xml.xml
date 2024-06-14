@@ -1,0 +1,17 @@
+<root>
+    <name>Neeraj</name>
+    <age>25</age>
+    <city>Mathura</city>
+    <address>
+        <location>Mathura</location>
+        <country>IN</country>
+    </address>
+    <isMarried>false</isMarried>
+    <hobbies>
+        <hobby>bike riding</hobby>
+        <hobby>gaming</hobby>
+        <hobby>binge watching series</hobby>
+        <hobby>travelling</hobby>
+    </hobbies>
+    <girlfriend>null</girlfriend>
+</root>
