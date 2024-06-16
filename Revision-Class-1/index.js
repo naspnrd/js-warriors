@@ -1,4 +1,4 @@
-// Q. What's the output?
+// Q. What's the output ?
 
 // function sayHi() {
 //   console.log(name);
