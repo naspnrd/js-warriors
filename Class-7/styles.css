@@ -1,0 +1,63 @@
+/* .title {
+    color: blue;
+}
+
+.content {
+    color: green;
+}
+
+li {
+    color: red;
+} */
+
+/* Descendent Combinator (space)  */
+/* #container .content {
+    color: red;
+} */
+
+/* Child Combinator (>) */
+
+/* #container > .content {
+    color: red;
+} */
+
+/* Adjacent Sibling Combinator ( + ) */
+
+/* .title + .content {
+    font-weight: bold;
+} */
+
+/* General Sibling Combinator ( ~)  */
+
+/* .title ~ .content {
+    font-weight: bold;
+    color: red;
+} */
+
+.primary {
+    background-color: blue;
+    color: black;
+}
+
+.secondary {
+    background-color: gray;
+    color: black;
+}
+
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    border: 2px solid black;
+    margin: 20px;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+}
