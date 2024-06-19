@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+}
+.container {
+    display: grid;
+    grid-template-columns: 100px auto;
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-rows: 50px auto;
+    height: 100vh;
+}
+
+.head-row {
+    grid-column: 1 / 3;
+    /* grid-column-start and grid-column-end */
+    background-color: aqua;
+    display: flex;
+}
+
+.head-row .col-head{
+    width: 150px;
+    display: flex;
+}
+.container div{
+    border: 2px solid blue;
+}
+
+.serialNo {
+    background-color: beige;
+}
+
+.body {
+    background-color: black;
+}
