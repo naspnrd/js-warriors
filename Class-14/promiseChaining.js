@@ -166,19 +166,68 @@ undefined
 // Error 1
 // Success 4
 
-new Promise((resolve, reject) => {
-  resolve(1);
-  resolve(2);
-  reject(3);
-  console.log(4);
-}).then(
-  (value) => {
-    console.log(value);
-  }, // onFulfilled
-  (error) => {
-    console.log(error);
-  } // onRejected
-);
+// new Promise((resolve, reject) => {
+//   resolve(1);
+//   resolve(2);
+//   reject(3);
+//   console.log(4);
+// }).then(
+//   (value) => {
+//     console.log(value);
+//   }, // onFulfilled
+//   (error) => {
+//     console.log(error);
+//   } // onRejected
+// );
 
 // O/P
 // 1
+
+// Promise.resolve(1)
+//   .then((val) => {
+//     console.log(val);
+//     return val + 1;
+//   })
+//   .then((val) => {
+//     console.log(val);
+//   })
+//   .then((val) => {
+//     console.log(val);
+//     return Promise.resolve(3).then((val) => {
+//       console.log(val);
+//       return val;
+//     });
+//   })
+//   .then((val) => {
+//     console.log(val);
+//     return Promise.reject(4);
+//   })
+//   .catch((val) => {
+//     console.log(val);
+//   })
+//   .finally((val) => {
+//     console.log(val);
+//     return 10;
+//   })
+//   .then((val) => {
+//     console.log(val);
+//   });
+
+// Making a promise call
+// promise will be rejected or resolved
+// a utility => alert(user) // retry the promise
+// Promise.resolve(1)
+//   .finally(() => {
+//     // throw new Error(2);
+//     return 2;
+//   })
+//   .then((res) => console.log(res))
+//   .catch((err) => console.log(err));
+
+// Promise.reject(1)
+//   .catch((val) => console.log(val)) // 1, return undefined
+//   .then((val) => console.log(val)); // undefined
+
+// Promise.reject(1)
+//   .then((val) => console.log(val)) // ignored
+//   .catch((val) => console.log(val)); // 1, return undefined
