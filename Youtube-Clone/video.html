@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Player</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="video.js" type="module"></script>
+    <!-- <script src="main.js" type="module"></script> -->
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="toggle-btn">
+        <!-- <span>Home</span>
+          <span>Shorts</span>
+          <span>Subscriptions</span> -->
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <a href="/Youtube-Clone/main.html">
+        <img src="img/logo.PNG" class="logo" alt="youtube logo" />
+      </a>
+      <div class="search-box">
+        <input type="text" class="search-bar" placeholder="Search" />
+        <button class="search-btn">
+          <img src="img/search.PNG" alt="search-icon" />
+        </button>
+      </div>
+      <div class="user-options">
+        <img src="img/video.PNG" alt="video-icon" class="icon" />
+        <!-- <img src="img/grid.PNG" alt="grid-icon" class="icon" /> -->
+        <img src="img/bell.PNG" alt="bell-icon" class="icon" />
+        <div class="user-dp">
+          <img src="img/profile-pic.png" alt="profile-pic-icon" />
+        </div>
+      </div>
+    </nav>
+    <div class="video-player-container">
+      <div id="video-player"></div>
+    </div>
+    <div class="video-comments-container">
+      <h2>Comments</h2>
+      <ul id="video-comments-list" class="comment-list">
+        <!-- <li class="comment-item">
+          <div class="comment-author">
+            <img
+              src="https://i.ytimg.com/vi/FRCIvHBY2gI/default.jpg"
+              alt="profile pic"
+            />
+            Neeraj
+          </div>
+          <div class="comment-body">
+            <div class="comment-text">This is sample comment.</div>
+            <div class="comment-actions">
+              <img src="img/like.png" alt="like icon" />
+              <span class="action-count">30</span>
+              <img src="img/dislike.png" alt="dislike icon" />
+              <span class="action-count">Reply</span>
+            </div>
+          </div>
+        </li> -->
+      </ul>
+    </div>
+  </body>
+</html>
